@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zapatillas Aurora · Nórdika | DIAMOND LUXURY STORE</title>
+  <meta name="description" content="Zapatillas Aurora de Nórdika en cuero blanco. Tallas 36 a 43.">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <!-- ================= CABECERA (igual en las 3 páginas) ================= -->
+  <header class="cabecera">
+    <div class="contenedor cabecera__interior">
+      <a class="logo" href="index.html">
+        <img src="img/logo.svg" alt="" width="28" height="28">
+        DIAMOND LUXURY STORE
+      </a>
+      <nav class="menu" aria-label="Principal">
+        <ul>
+          <li><a href="#">Ropa</a></li>
+          <li><a href="categoria.html">Zapatos</a></li>
+          <li><a href="#">Accesorios</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" class="contenedor">
+
+    <nav class="migas" aria-label="Ruta de navegación">
+      <ol>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="categoria.html">Zapatos</a></li>
+        <li aria-current="page">Zapatillas Aurora</li>
+      </ol>
+    </nav>
+
+    <article class="ficha">
+
+      <!-- Columna 1: imagen -->
+      <div class="ficha__imagen">
+        <img src="img/zapatilla.svg" alt="Zapatillas Aurora de Nórdika, vista lateral"
+             width="200" height="200">
+      </div>
+
+      <!-- Columna 2: datos y compra -->
+      <div class="ficha__datos">
+        <p class="etiqueta">Nórdika</p>
+        <h1 class="ficha__nombre">Zapatillas Aurora</h1>
+        <p class="ficha__precio">$389.900</p>
+        <p class="ficha__resumen">Cuero blanco · Suela de goma · Plantilla acolchada</p>
+
+        <!--
+          SELECTOR DE TALLA
+          - Todos los radios tienen el mismo name="talla": así solo se
+            puede marcar uno.
+          - "required" en el primero hace que el navegador pida elegir
+            una talla antes de enviar el formulario.
+          - "disabled" marca una talla agotada.
+          AVISO: sin JavaScript ni servidor, el botón no agrega nada a un
+          carrito. Al enviar, el navegador solo recarga esta página con
+          la talla en la dirección (ej. producto.html?talla=40).
+        -->
+        <form class="ficha__compra" action="producto.html" method="get">
+          <fieldset class="tallas">
+            <legend>Elige tu talla</legend>
+            <div class="tallas__opciones">
+              <input type="radio" id="talla-36" name="talla" value="36" required>
+              <label for="talla-36">36</label>
+
+              <input type="radio" id="talla-37" name="talla" value="37">
+              <label for="talla-37">37</label>
+
+              <input type="radio" id="talla-38" name="talla" value="38" disabled>
+              <label for="talla-38">38<span class="visualmente-oculto"> (agotada)</span></label>
+
+              <input type="radio" id="talla-39" name="talla" value="39">
+              <label for="talla-39">39</label>
+
+              <input type="radio" id="talla-40" name="talla" value="40">
+              <label for="talla-40">40</label>
+
+              <input type="radio" id="talla-41" name="talla" value="41">
+              <label for="talla-41">41</label>
+
+              <input type="radio" id="talla-42" name="talla" value="42">
+              <label for="talla-42">42</label>
+
+              <input type="radio" id="talla-43" name="talla" value="43">
+              <label for="talla-43">43</label>
+            </div>
+            <p class="tallas__ayuda">Numeración europea (EU). La talla 38 está agotada.</p>
+          </fieldset>
+
+          <button class="boton boton--ancho" type="submit">Agregar al carrito</button>
+        </form>
+
+        <!-- <details> crea secciones que se abren y cierran, sin JavaScript -->
+        <div class="ficha__info">
+          <details open>
+            <summary>Descripción</summary>
+            <p>Zapatillas de perfil bajo hechas en cuero liso, con costuras a la vista
+               y suela de goma cosida. Combinan con jeans, pantalón de lino o vestido.</p>
+          </details>
+          <details>
+            <summary>Materiales y cuidado</summary>
+            <ul>
+              <li>Exterior: cuero de vaca</li>
+              <li>Forro: textil transpirable</li>
+              <li>Suela: goma natural</li>
+              <li>Limpiar con un paño húmedo. No lavar en lavadora.</li>
+            </ul>
+          </details>
+          <details>
+            <summary>Envíos y cambios</summary>
+            <p>Envío gratis desde $300.000. Tienes 30 días para cambiar la talla
+               sin costo.</p>
+          </details>
+        </div>
+      </div>
+
+    </article>
+
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <p class="pie__marca">DIAMOND LUXURY STORE</p>
+      <p>Ropa, zapatos y accesorios de marcas seleccionadas.</p>
+      <p class="pie__legal">© 2026 DIAMOND LUXURY STORE · Sitio de práctica</p>
+    </div>
+  </footer>
+
+</body>
+</html>
