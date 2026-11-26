@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <!-- Sin esta línea el celular muestra la página "de escritorio" en miniatura -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DIAMOND LUXURY STORE | Ropa, zapatos y accesorios</title>
+  <meta name="description" content="Tienda multimarca de ropa, zapatos y accesorios seleccionados.">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <!-- Permite a quien usa teclado saltarse el menú -->
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <!-- ================= CABECERA ================= -->
+  <header class="cabecera">
+    <div class="contenedor cabecera__interior">
+      <a class="logo" href="index.html">
+        <img src="img/logo.svg" alt="" width="28" height="28">
+        DIAMOND LUXURY STORE
+      </a>
+      <nav class="menu" aria-label="Principal">
+        <ul>
+          <li><a href="ropa.html">Ropa</a></li>
+          <li><a href="zapatos.html">Zapatos</a></li>
+          <li><a href="accesorios.html">Accesorios</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ================= BANNER ================= -->
+    <section class="banner">
+      <div class="contenedor">
+        <p class="etiqueta">Nueva colección</p>
+        <h1>El lujo de vestir bien</h1>
+        <p>Ropa, zapatos y accesorios de marcas seleccionadas, en un solo lugar.</p>
+        <a class="boton boton--claro" href="zapatos.html">Ver zapatos</a>
+      </div>
+    </section>
+
+    <!-- ================= CATEGORÍAS ================= -->
+    <section class="seccion">
+      <div class="contenedor">
+        <h2 class="seccion__titulo">Compra por categoría</h2>
+        <ul class="categorias">
+          <li>
+            <a class="categoria-tarjeta" href="ropa.html">
+              <!-- alt vacío: la imagen es decorativa, el título ya dice qué es -->
+              <img src="img/camisa.svg" alt="" width="200" height="200">
+              <h3>Ropa</h3>
+              <span>Ver más →</span>
+            </a>
+          </li>
+          <li>
+            <a class="categoria-tarjeta" href="zapatos.html">
+              <img src="img/zapatilla.svg" alt="" width="200" height="200">
+              <h3>Zapatos</h3>
+              <span>Ver más →</span>
+            </a>
+          </li>
+          <li>
+            <a class="categoria-tarjeta" href="accesorios.html">
+              <img src="img/bolso.svg" alt="" width="200" height="200">
+              <h3>Accesorios</h3>
+              <span>Ver más →</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= DESTACADOS ================= -->
+    <section class="seccion">
+      <div class="contenedor">
+        <h2 class="seccion__titulo">Destacados</h2>
+        <!-- DEMO: solo existe la ficha de las Zapatillas Aurora (producto.html).
+             Las demás tarjetas no son enlace hasta que tengan su propia ficha. -->
+        <ul class="productos productos--destacados">
+          <li class="producto-tarjeta">
+            <a href="producto.html">
+              <img src="img/zapatilla.svg" alt="" width="200" height="200">
+              <p class="etiqueta">Nórdika</p>
+              <h3 class="producto-tarjeta__nombre">Zapatillas Aurora</h3>
+              <p class="precio">$389.900</p>
+            </a>
+          </li>
+          <li class="producto-tarjeta">
+            <img src="img/camisa.svg" alt="" width="200" height="200">
+            <p class="etiqueta">Casa Ferro</p>
+            <h3 class="producto-tarjeta__nombre">Camisa Lino Blanco</h3>
+            <p class="precio">$249.900</p>
+          </li>
+          <li class="producto-tarjeta">
+            <img src="img/bolso.svg" alt="" width="200" height="200">
+            <p class="etiqueta">Vellani</p>
+            <h3 class="producto-tarjeta__nombre">Bolso Siena</h3>
+            <p class="precio">$529.900</p>
+          </li>
+          <li class="producto-tarjeta">
+            <img src="img/reloj.svg" alt="" width="200" height="200">
+            <p class="etiqueta">Horalia</p>
+            <h3 class="producto-tarjeta__nombre">Reloj Clásico 38 mm</h3>
+            <p class="precio">$689.900</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= BENEFICIOS ================= -->
+    <section class="seccion seccion--crema">
+      <div class="contenedor">
+        <h2 class="visualmente-oculto">Por qué comprar con nosotros</h2>
+        <ul class="beneficios">
+          <li>
+            <h3>Envío gratis</h3>
+            <p>En compras desde $300.000 a todo el país.</p>
+          </li>
+          <li>
+            <h3>Cambios sin costo</h3>
+            <p>Tienes 30 días para cambiar tu talla.</p>
+          </li>
+          <li>
+            <h3>Marcas originales</h3>
+            <p>Compramos cada pieza a proveedores que verificamos y la revendemos original.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= PIE DE PÁGINA ================= -->
+  <footer class="pie">
+    <div class="contenedor">
+      <p class="pie__marca">DIAMOND LUXURY STORE</p>
+      <p>Ropa, zapatos y accesorios de marcas seleccionadas.</p>
+      <p class="pie__legal">© 2026 DIAMOND LUXURY STORE · Sitio de práctica</p>
+    </div>
+  </footer>
+
+</body>
+</html>

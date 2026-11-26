@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zapatos | DIAMOND LUXURY STORE</title>
+  <meta name="description" content="Zapatillas, botines, mocasines, sandalias y tacones de marcas seleccionadas.">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <!-- ================= CABECERA (igual en todas las páginas) ================= -->
+  <header class="cabecera">
+    <div class="contenedor cabecera__interior">
+      <a class="logo" href="index.html">
+        <img src="img/logo.svg" alt="" width="28" height="28">
+        DIAMOND LUXURY STORE
+      </a>
+      <nav class="menu" aria-label="Principal">
+        <ul>
+          <li><a href="ropa.html">Ropa</a></li>
+          <!-- aria-current indica la sección en la que estamos -->
+          <li><a href="zapatos.html" aria-current="page">Zapatos</a></li>
+          <li><a href="accesorios.html">Accesorios</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" class="contenedor">
+
+    <!-- Ruta de navegación ("migas de pan") -->
+    <nav class="migas" aria-label="Ruta de navegación">
+      <ol>
+        <li><a href="index.html">Inicio</a></li>
+        <li aria-current="page">Zapatos</li>
+      </ol>
+    </nav>
+
+    <header class="categoria-encabezado">
+      <h1>Zapatos</h1>
+      <p>6 productos</p>
+    </header>
+
+    <section class="categoria-listado" aria-label="Productos">
+      <!-- Los títulos de las tarjetas son h2 porque van justo debajo del h1.
+           Solo las Zapatillas Aurora tienen ficha, por eso solo esa tarjeta es enlace. -->
+      <ul class="productos">
+        <li class="producto-tarjeta">
+          <a href="producto.html">
+            <img src="img/zapatilla.svg" alt="" width="200" height="200">
+            <p class="etiqueta">Nórdika</p>
+            <h2 class="producto-tarjeta__nombre">Zapatillas Aurora</h2>
+            <p class="precio">$389.900</p>
+          </a>
+        </li>
+        <li class="producto-tarjeta">
+          <img src="img/botin.svg" alt="" width="200" height="200">
+          <p class="etiqueta">Casa Ferro</p>
+          <h2 class="producto-tarjeta__nombre">Botín Chelsea</h2>
+          <p class="precio">$459.900</p>
+        </li>
+        <li class="producto-tarjeta">
+          <img src="img/mocasin.svg" alt="" width="200" height="200">
+          <p class="etiqueta">Vellani</p>
+          <h2 class="producto-tarjeta__nombre">Mocasín Milano</h2>
+          <p class="precio">$329.900</p>
+        </li>
+        <li class="producto-tarjeta">
+          <img src="img/sandalia.svg" alt="" width="200" height="200">
+          <p class="etiqueta">Costa Alba</p>
+          <h2 class="producto-tarjeta__nombre">Sandalia Brisa</h2>
+          <p class="precio">$219.900</p>
+        </li>
+        <li class="producto-tarjeta">
+          <img src="img/tacon.svg" alt="" width="200" height="200">
+          <p class="etiqueta">Vellani</p>
+          <h2 class="producto-tarjeta__nombre">Tacón Clásico</h2>
+          <p class="precio">$419.900</p>
+        </li>
+        <li class="producto-tarjeta">
+          <img src="img/zapatilla.svg" alt="" width="200" height="200">
+          <p class="etiqueta">Nórdika</p>
+          <h2 class="producto-tarjeta__nombre">Tenis Urbano</h2>
+          <p class="precio">$299.900</p>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <p class="pie__marca">DIAMOND LUXURY STORE</p>
+      <p>Ropa, zapatos y accesorios de marcas seleccionadas.</p>
+      <p class="pie__legal">© 2026 DIAMOND LUXURY STORE · Sitio de práctica</p>
+    </div>
+  </footer>
+
+</body>
+</html>
