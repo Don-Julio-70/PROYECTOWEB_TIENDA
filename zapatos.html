@@ -12,7 +12,7 @@
 
   <a class="saltar" href="#contenido">Saltar al contenido</a>
 
-  <!-- ================= CABECERA (igual en las 3 páginas) ================= -->
+  <!-- ================= CABECERA (igual en todas las páginas) ================= -->
   <header class="cabecera">
     <div class="contenedor cabecera__interior">
       <a class="logo" href="index.html">
@@ -21,10 +21,10 @@
       </a>
       <nav class="menu" aria-label="Principal">
         <ul>
-          <li><a href="#">Ropa</a></li>
+          <li><a href="ropa.html">Ropa</a></li>
           <!-- aria-current indica la sección en la que estamos -->
-          <li><a href="categoria.html" aria-current="page">Zapatos</a></li>
-          <li><a href="#">Accesorios</a></li>
+          <li><a href="zapatos.html" aria-current="page">Zapatos</a></li>
+          <li><a href="accesorios.html">Accesorios</a></li>
         </ul>
       </nav>
     </div>
@@ -46,55 +46,46 @@
     </header>
 
     <section class="categoria-listado" aria-label="Productos">
-      <!-- DEMO: todas las tarjetas llevan a la única ficha que existe -->
+      <!-- Los títulos de las tarjetas son h2 porque van justo debajo del h1.
+           Solo las Zapatillas Aurora tienen ficha, por eso solo esa tarjeta es enlace. -->
       <ul class="productos">
         <li class="producto-tarjeta">
           <a href="producto.html">
             <img src="img/zapatilla.svg" alt="" width="200" height="200">
             <p class="etiqueta">Nórdika</p>
-            <h3>Zapatillas Aurora</h3>
+            <h2 class="producto-tarjeta__nombre">Zapatillas Aurora</h2>
             <p class="precio">$389.900</p>
           </a>
         </li>
         <li class="producto-tarjeta">
-          <a href="producto.html">
-            <img src="img/botin.svg" alt="" width="200" height="200">
-            <p class="etiqueta">Casa Ferro</p>
-            <h3>Botín Chelsea</h3>
-            <p class="precio">$459.900</p>
-          </a>
+          <img src="img/botin.svg" alt="" width="200" height="200">
+          <p class="etiqueta">Casa Ferro</p>
+          <h2 class="producto-tarjeta__nombre">Botín Chelsea</h2>
+          <p class="precio">$459.900</p>
         </li>
         <li class="producto-tarjeta">
-          <a href="producto.html">
-            <img src="img/mocasin.svg" alt="" width="200" height="200">
-            <p class="etiqueta">Vellani</p>
-            <h3>Mocasín Milano</h3>
-            <p class="precio">$329.900</p>
-          </a>
+          <img src="img/mocasin.svg" alt="" width="200" height="200">
+          <p class="etiqueta">Vellani</p>
+          <h2 class="producto-tarjeta__nombre">Mocasín Milano</h2>
+          <p class="precio">$329.900</p>
         </li>
         <li class="producto-tarjeta">
-          <a href="producto.html">
-            <img src="img/sandalia.svg" alt="" width="200" height="200">
-            <p class="etiqueta">Costa Alba</p>
-            <h3>Sandalia Brisa</h3>
-            <p class="precio">$219.900</p>
-          </a>
+          <img src="img/sandalia.svg" alt="" width="200" height="200">
+          <p class="etiqueta">Costa Alba</p>
+          <h2 class="producto-tarjeta__nombre">Sandalia Brisa</h2>
+          <p class="precio">$219.900</p>
         </li>
         <li class="producto-tarjeta">
-          <a href="producto.html">
-            <img src="img/tacon.svg" alt="" width="200" height="200">
-            <p class="etiqueta">Vellani</p>
-            <h3>Tacón Clásico</h3>
-            <p class="precio">$419.900</p>
-          </a>
+          <img src="img/tacon.svg" alt="" width="200" height="200">
+          <p class="etiqueta">Vellani</p>
+          <h2 class="producto-tarjeta__nombre">Tacón Clásico</h2>
+          <p class="precio">$419.900</p>
         </li>
         <li class="producto-tarjeta">
-          <a href="producto.html">
-            <img src="img/zapatilla.svg" alt="" width="200" height="200">
-            <p class="etiqueta">Nórdika</p>
-            <h3>Tenis Urbano</h3>
-            <p class="precio">$299.900</p>
-          </a>
+          <img src="img/zapatilla.svg" alt="" width="200" height="200">
+          <p class="etiqueta">Nórdika</p>
+          <h2 class="producto-tarjeta__nombre">Tenis Urbano</h2>
+          <p class="precio">$299.900</p>
         </li>
       </ul>
     </section>

@@ -386,12 +386,15 @@ a {
   border-radius: var(--radio);
 }
 
-.producto-tarjeta h3 {
+/* Se usa una clase y no "h2" o "h3": el nivel del título cambia según
+   la página (h3 en la portada, h2 en las categorías) y el estilo no debe
+   depender de eso. */
+.producto-tarjeta__nombre {
   margin: 0.25rem 0;
   font-size: 1rem;
 }
 
-.producto-tarjeta a:hover h3 {
+.producto-tarjeta a:hover .producto-tarjeta__nombre {
   text-decoration: underline;
 }
 

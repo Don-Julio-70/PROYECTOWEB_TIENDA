@@ -2,6 +2,7 @@
 
 > Estado: **aprobado y construido**. Nombre de la tienda: DIAMOND LUXURY STORE.
 > Las preguntas 3 y 4 no se respondieron; se usaron las propuestas (Zapatos, zapatillas 36–43, pesos colombianos).
+> Revisión del PR: `categoria.html` se renombró a `zapatos.html` y se agregaron `ropa.html` y `accesorios.html`.
 > Único cambio respecto al plan: en celular la cuadrícula muestra 2 productos por fila (no 1), como la mayoría de tiendas en línea.
 
 ## Estado actual del repositorio

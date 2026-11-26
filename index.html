@@ -23,10 +23,9 @@
       </a>
       <nav class="menu" aria-label="Principal">
         <ul>
-          <!-- PENDIENTE: las páginas de Ropa y Accesorios aún no existen -->
-          <li><a href="#">Ropa</a></li>
-          <li><a href="categoria.html">Zapatos</a></li>
-          <li><a href="#">Accesorios</a></li>
+          <li><a href="ropa.html">Ropa</a></li>
+          <li><a href="zapatos.html">Zapatos</a></li>
+          <li><a href="accesorios.html">Accesorios</a></li>
         </ul>
       </nav>
     </div>
@@ -40,7 +39,7 @@
         <p class="etiqueta">Nueva colección</p>
         <h1>El lujo de vestir bien</h1>
         <p>Ropa, zapatos y accesorios de marcas seleccionadas, en un solo lugar.</p>
-        <a class="boton boton--claro" href="categoria.html">Ver zapatos</a>
+        <a class="boton boton--claro" href="zapatos.html">Ver zapatos</a>
       </div>
     </section>
 
@@ -50,7 +49,7 @@
         <h2 class="seccion__titulo">Compra por categoría</h2>
         <ul class="categorias">
           <li>
-            <a class="categoria-tarjeta" href="#">
+            <a class="categoria-tarjeta" href="ropa.html">
               <!-- alt vacío: la imagen es decorativa, el título ya dice qué es -->
               <img src="img/camisa.svg" alt="" width="200" height="200">
               <h3>Ropa</h3>
@@ -58,14 +57,14 @@
             </a>
           </li>
           <li>
-            <a class="categoria-tarjeta" href="categoria.html">
+            <a class="categoria-tarjeta" href="zapatos.html">
               <img src="img/zapatilla.svg" alt="" width="200" height="200">
               <h3>Zapatos</h3>
               <span>Ver más →</span>
             </a>
           </li>
           <li>
-            <a class="categoria-tarjeta" href="#">
+            <a class="categoria-tarjeta" href="accesorios.html">
               <img src="img/bolso.svg" alt="" width="200" height="200">
               <h3>Accesorios</h3>
               <span>Ver más →</span>
@@ -79,40 +78,34 @@
     <section class="seccion">
       <div class="contenedor">
         <h2 class="seccion__titulo">Destacados</h2>
-        <!-- DEMO: solo existe una ficha (producto.html), así que todas las
-             tarjetas llevan a ella. En una tienda real cada una tendría la suya. -->
+        <!-- DEMO: solo existe la ficha de las Zapatillas Aurora (producto.html).
+             Las demás tarjetas no son enlace hasta que tengan su propia ficha. -->
         <ul class="productos productos--destacados">
           <li class="producto-tarjeta">
             <a href="producto.html">
               <img src="img/zapatilla.svg" alt="" width="200" height="200">
               <p class="etiqueta">Nórdika</p>
-              <h3>Zapatillas Aurora</h3>
+              <h3 class="producto-tarjeta__nombre">Zapatillas Aurora</h3>
               <p class="precio">$389.900</p>
             </a>
           </li>
           <li class="producto-tarjeta">
-            <a href="producto.html">
-              <img src="img/camisa.svg" alt="" width="200" height="200">
-              <p class="etiqueta">Casa Ferro</p>
-              <h3>Camisa Lino Blanco</h3>
-              <p class="precio">$249.900</p>
-            </a>
+            <img src="img/camisa.svg" alt="" width="200" height="200">
+            <p class="etiqueta">Casa Ferro</p>
+            <h3 class="producto-tarjeta__nombre">Camisa Lino Blanco</h3>
+            <p class="precio">$249.900</p>
           </li>
           <li class="producto-tarjeta">
-            <a href="producto.html">
-              <img src="img/bolso.svg" alt="" width="200" height="200">
-              <p class="etiqueta">Vellani</p>
-              <h3>Bolso Siena</h3>
-              <p class="precio">$529.900</p>
-            </a>
+            <img src="img/bolso.svg" alt="" width="200" height="200">
+            <p class="etiqueta">Vellani</p>
+            <h3 class="producto-tarjeta__nombre">Bolso Siena</h3>
+            <p class="precio">$529.900</p>
           </li>
           <li class="producto-tarjeta">
-            <a href="producto.html">
-              <img src="img/reloj.svg" alt="" width="200" height="200">
-              <p class="etiqueta">Horalia</p>
-              <h3>Reloj Clásico 38 mm</h3>
-              <p class="precio">$689.900</p>
-            </a>
+            <img src="img/reloj.svg" alt="" width="200" height="200">
+            <p class="etiqueta">Horalia</p>
+            <h3 class="producto-tarjeta__nombre">Reloj Clásico 38 mm</h3>
+            <p class="precio">$689.900</p>
           </li>
         </ul>
       </div>
@@ -133,7 +126,7 @@
           </li>
           <li>
             <h3>Marcas originales</h3>
-            <p>Trabajamos directo con cada marca.</p>
+            <p>Compramos cada pieza a proveedores que verificamos y la revendemos original.</p>
           </li>
         </ul>
       </div>

@@ -21,9 +21,9 @@
       </a>
       <nav class="menu" aria-label="Principal">
         <ul>
-          <li><a href="#">Ropa</a></li>
-          <li><a href="categoria.html">Zapatos</a></li>
-          <li><a href="#">Accesorios</a></li>
+          <li><a href="ropa.html">Ropa</a></li>
+          <li><a href="zapatos.html">Zapatos</a></li>
+          <li><a href="accesorios.html">Accesorios</a></li>
         </ul>
       </nav>
     </div>
@@ -34,7 +34,7 @@
     <nav class="migas" aria-label="Ruta de navegación">
       <ol>
         <li><a href="index.html">Inicio</a></li>
-        <li><a href="categoria.html">Zapatos</a></li>
+        <li><a href="zapatos.html">Zapatos</a></li>
         <li aria-current="page">Zapatillas Aurora</li>
       </ol>
     </nav>
@@ -66,7 +66,8 @@
           la talla en la dirección (ej. producto.html?talla=40).
         -->
         <form class="ficha__compra" action="producto.html" method="get">
-          <fieldset class="tallas">
+          <!-- aria-describedby: el lector de pantalla lee también la ayuda de abajo -->
+          <fieldset class="tallas" aria-describedby="tallas-ayuda">
             <legend>Elige tu talla</legend>
             <div class="tallas__opciones">
               <input type="radio" id="talla-36" name="talla" value="36" required>
@@ -93,7 +94,7 @@
               <input type="radio" id="talla-43" name="talla" value="43">
               <label for="talla-43">43</label>
             </div>
-            <p class="tallas__ayuda">Numeración europea (EU). La talla 38 está agotada.</p>
+            <p class="tallas__ayuda" id="tallas-ayuda">Numeración europea (EU). La talla 38 está agotada.</p>
           </fieldset>
 
           <button class="boton boton--ancho" type="submit">Agregar al carrito</button>
